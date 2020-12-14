@@ -1,0 +1,15 @@
+Page d'accueil:
+
+Header
+_Bandeau
+_Nav bar
+
+Main
+_Gros titre (tout rubrique confondu)
+_2 colonnes:
+-> à gauche gros titre anime / manga
+-> à droite mini rubrique (trailer, figurine, fan art...)
+
+Footer
+_Info légal
+_Lien réseau sociaux

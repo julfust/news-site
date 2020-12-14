@@ -10,22 +10,82 @@
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="row">
-            <div class="col-2">HAM ICON</div>
-            <div class="col-4 offset-2">LOGO</div>
-            <div class="col-2 offset-2">SEARCH ICON</div>
+        <nav class="row nav-bar">
+            <div class="col-2 nav-bar__ham-btn"><span>&#9776;</span></div>
+            <div class="col-4 offset-2 nav-bar__logo"><div>LOGO</div></div>
+            <div class="col-2 offset-2  nav-bar__srh-btn"><span>🔍</span></div>
         </nav>
 
-        <div class="row reduce">
-            <main class="col-12">TOP NEWS (RUBRIQUE 1)</main>
-            <aside class="col-12">TOP NEWS (RUBRIQUE 2)</aside>
-        </div>
+        <section class="row central-content">
+            <main class="col-12 news-section">
+                <div class="news-section-rubrique">
+                    <h1 class="rubrique-title">Animé</h1>
+                    <article class="rubrique-main-article">
+                        <div class="main-article-picture"></div>
+                        <div class="main-article-text"></div>
+                    </article>
+                    <article class="rubrique-secondary-article">
+                        <div class="secondary-article-picture"></div>
+                        <div class="secondary-article-text"></div>
+                    </article>
+                    <article class="rubrique-secondary-article">
+                        <div class="secondary-article-picture"></div>
+                        <div class="secondary-article-text"></div>
+                    </article>
+                    <article class="rubrique-secondary-article">
+                        <div class="secondary-article-picture"></div>
+                        <div class="secondary-article-text"></div>
+                    </article>
+                </div>
 
-        <footer class="row">
-            <div class="col-12">LOGO</div>
-            <div class="col-12">PRESENTATION SITE</div>
-            <div class="col-12">PRESENTATION SITE</div>
-            <div class="col-12">LIEN RESEAUX SOCIAUX</div>
+                <div class="news-section-rubrique">
+                    <h1 class="rubrique-title">Manga</h1>
+                    <article class="rubrique-main-article">
+                        <div class="main-article-picture"></div>
+                        <div class="main-article-text"></div>
+                    </article>
+                    <article class="rubrique-secondary-article">
+                        <div class="secondary-article-picture"></div>
+                        <div class="secondary-article-text"></div>
+                    </article>
+                    <article class="rubrique-secondary-article">
+                        <div class="secondary-article-picture"></div>
+                        <div class="secondary-article-text"></div>
+                    </article>
+                    <article class="rubrique-secondary-article">
+                        <div class="secondary-article-picture"></div>
+                        <div class="secondary-article-text"></div>
+                    </article>
+                </div>
+            </main>
+            <aside class="col-12 aside-section">
+                <section class="aside-episode-section">
+                    <h2 class="episode-section-title">Les dernières épisodes sorties</h2>
+                    <div class="episode-section-list-container">
+                        <ul class="episode-section-list"></ul>
+                        <ul class="episode-section-list"></ul>
+                    </div>
+                </section>
+                <section class="aside-trailer-section">
+                    <h2 class="trailer-section-title">Bande-annonce</h2>
+                    <div class="trailer-section-video"></div>
+                </section>
+                <section class="aside-newsletter-section">
+                    <h2 class="newsletter-section-title">Abonnez-vous à notre news letter !</h2>
+                    <div class="newsletter-section-form"></div>
+                </section>
+                <section class="aside-advertising-section">
+                    <h2 class="advertising-section-title">Publicité</h2>
+                    <div class="advertising-section-form"></div>
+                </section>
+            </aside>
+        </section>
+
+        <footer class="row footer-section">
+            <h1 class="col-6 offset-3 footer-logo">LOGO</h1>
+            <acticle class="col-10 offset-1 footer-article">PRESENTATION SITE</acticle>
+            <section class="col-10 offset-1 footer-social-section">LIEN RESEAUX SOCIAUX</section>
+            <article class="col-12 footer-legal-section">MENTIONS LEGALES</article>
         </footer>
     </div>
 

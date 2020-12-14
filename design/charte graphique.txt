@@ -1,0 +1,3 @@
+Couleur:
+Couleur de fond -> #FF0400 (header) / #f2f2f2 (main) / white (news container) / #FF0400 (footer)
+Couleur de police -> white (sur fond rouge) / black (sur fond blanc)

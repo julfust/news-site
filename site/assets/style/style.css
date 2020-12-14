@@ -2,18 +2,252 @@
   border: 1px solid black;
 }
 
-.row {
+.container-fluid > * {
+  background-color: #444;
   border: 1px solid red;
 }
 
-.reduce {
-  width: 95%;
-  margin: auto;
+.container-fluid > * > * {
+  background-color: pink;
+  border: 1px solid blue;
+  text-align: center;
 }
 
-*[class*="col"] {
-  height: 100px;
-  text-align: center;
+.container-fluid > * > * > * {
+  background-color: purple;
   border: 1px solid green;
+  text-align: center;
+}
+
+.container-fluid > * > * > * > * {
+  background-color: brown;
+  border: 1px solid yellow;
+  text-align: center;
+}
+
+.container-fluid > * > * > * > * > * {
+  background-color: orangered;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.container-fluid .row *[class*="col"] {
+  padding: 0;
+}
+
+.container-fluid .nav-bar {
+  margin-bottom: 2.5vh;
+}
+
+.container-fluid .nav-bar__ham-btn {
+  height: 9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 7.5vw;
+}
+
+.container-fluid .nav-bar__logo {
+  height: 9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 9.5vw;
+}
+
+.container-fluid .nav-bar__srh-btn {
+  height: 9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 7.5vw;
+}
+
+.container-fluid .central-content {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 5vh;
+}
+
+.container-fluid .central-content .news-section {
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique {
+  width: 100%;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique:nth-child(1) {
+  margin-bottom: 5vh;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique .rubrique-title {
+  margin-bottom: 2.5vh;
+  font-size: 4.5vw;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique .rubrique-main-article {
+  width: 100%;
+  margin-bottom: 2.5vh;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique .rubrique-main-article .main-article-picture {
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 1vh;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique .rubrique-main-article .main-article-text {
+  width: 100%;
+  height: 8vh;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique .rubrique-secondary-article {
+  width: 100%;
+  height: 12vh;
+  margin-bottom: 2.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique .rubrique-secondary-article:nth-child(5) {
+  margin-bottom: 0;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique .rubrique-secondary-article .secondary-article-picture {
+  width: 23.5%;
+  height: 12vh;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique .rubrique-secondary-article .secondary-article-text {
+  width: 72.5%;
+  height: 12vh;
+}
+
+.container-fluid .central-content .aside-section {
+  width: 100%;
+}
+
+.container-fluid .central-content .aside-section .aside-episode-section {
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.container-fluid .central-content .aside-section .aside-episode-section .episode-section-title {
+  margin-bottom: 2.5vh;
+  font-size: 4.5vw;
+}
+
+.container-fluid .central-content .aside-section .aside-episode-section .episode-section-list-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-fluid .central-content .aside-section .aside-episode-section .episode-section-list-container .episode-section-list {
+  width: 47.5%;
+  height: 30vh;
+  margin-bottom: 0;
+}
+
+.container-fluid .central-content .aside-section .aside-trailer-section {
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.container-fluid .central-content .aside-section .aside-trailer-section .trailer-section-title {
+  margin-bottom: 2.5vh;
+  font-size: 4.5vw;
+}
+
+.container-fluid .central-content .aside-section .aside-trailer-section .trailer-section-video {
+  width: 100%;
+  height: 30vh;
+}
+
+.container-fluid .central-content .aside-section .aside-newsletter-section {
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.container-fluid .central-content .aside-section .aside-newsletter-section .newsletter-section-title {
+  margin-bottom: 2.5vh;
+  font-size: 4.5vw;
+}
+
+.container-fluid .central-content .aside-section .aside-newsletter-section .newsletter-section-form {
+  width: 100%;
+  height: 21vh;
+}
+
+.container-fluid .central-content .aside-section .aside-advertising-section {
+  width: 100%;
+}
+
+.container-fluid .central-content .aside-section .aside-advertising-section .advertising-section-title {
+  margin-bottom: 2.5vh;
+  font-size: 4.5vw;
+}
+
+.container-fluid .central-content .aside-section .aside-advertising-section .advertising-section-form {
+  width: 100%;
+  height: 30vh;
+}
+
+.container-fluid .footer-section .footer-logo {
+  height: 9vh;
+  margin-top: 3.75vh;
+  margin-bottom: 2.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 9.5vw;
+}
+
+.container-fluid .footer-section .footer-article {
+  height: 22.5vh;
+  margin-bottom: 5vh;
+}
+
+.container-fluid .footer-section .footer-social-section {
+  height: 16.9vh;
+  margin-bottom: 5vh;
+}
+
+.container-fluid .footer-section .footer-legal-section {
+  height: 16.9vh;
 }
 /*# sourceMappingURL=style.css.map */

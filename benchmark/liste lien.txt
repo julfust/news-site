@@ -1,0 +1,55 @@
+https://www.lequipe.fr/
+Caractéristiques: 
+_Page très organisé avec un design sobre
+_Le schéma de navigation ressemble à celui de la page de notre projet (page principale -> gros titre rubrique confondu classé par ordre de popularité ex: n°1 foot
+et au dessus du contenu main on trouve une bar de navigation vers chaque rubrique -> football, tennis, rugby, cyclisme, basket etc...)
+_L'organisation de la page principal est plus vertical que ce que j'imaginais, on trouve une seul colonne avec tout les news emplié (dans notre cas j'avais plus pensé
+à deux colonne a gauche et a droit de la page)
+_Une grande place accordé à la publicité
+
+
+https://www.lesechos.fr/industrie-services/mode-luxe
+Caractéristiques:
+__Page très organisé avec un design sobre
+_Le schéma de navigation ressemble à celui de la page de notre projet (page principale -> gros titre rubrique confondu classé par ordre de popularité ex: n°1 foot
+et au dessus du contenu main on trouve une bar de navigation vers chaque rubrique -> football, tennis, rugby, cyclisme, basket etc...)
+_Différence avec le site de l'équipe: l'organisation de la section centrale est un peu différente (on a 2 sous colonne dans la colonne centrale: à gauche la colonne qui liste
+tout les articles de la rubrique et à droit une colonne avec plusieurs liste de sous catégories d'article dans cette catégorie d'article (les plus vues, à la une etc...)
+_Différences avec le site de l'équipe: la nav bar est divisé en deux nav bar, il y a celle des rurbiques comme pour l'équipe et celle des média qui permet de consulter les
+news disponible en fonction des média: journal, podcasts, infographie
+_Dans l'ensemble le site est mieux fait que celui de l'équipe je trouve, déjà parce qu'il ne bug pas mais aussi parce qu'il est mieux divisé, avec plus de sous catégories
+toujours pertinante et qui facilite la navigation sans jamais la compliqué
+
+
+https://yatta.animedigitalnetwork.fr/
+Caractéristiques:
+_Page très organisé avec un design sobre
+_Le schéma de navigation ressemble à celui de la page de notre projet (page principale -> gros titre rubrique confondu classé par ordre de popularité ex: n°1 foot
+et au dessus du contenu main on trouve une bar de navigation vers chaque rubrique -> football, tennis, rugby, cyclisme, basket etc...)
+_Design sobre mais quand meme un peu plus marqué que pour les autres sites (les couleurs sont plus flashy)
+_Pour la section vidéo et licences, la colonne central est divisé en trois sous colonne avec trois flux de liste d'item
+_Pour la section interview on retrouve une organisation plus proche de celle du site echo avec 2 sous colonnes (à gauche: liste des interview et à droite: les articles
+vedettes, pub etc...)
+
+Défault du site: il y a trop d'espace sur les cotés, la colonne central pourrait etre elargie pour pouvoir prendre plus d'espace et agrandir ses items.
+
+
+https://www.vice.com/fr
+Caractéristiques:
+_Pas de pub
+_Mise en forme très différentes de celle qu'on a vue précédement (les images prennent beaucoup plus d'espace, on laisse aussi beaucoup plus d'espace vide entre les sections
+et sous sections pour faire respirer la page, cela est du aussi au fait que le site partage avant tout des contenus video et qu'il a donc moins de text)
+_La navigation et le regroupement des news et aussi assez spécifique. Pour la navigation on retrouve la logique de rubrique mais au second niveau (menu hamburger) le premier
+niveau de la nav bar propose soit l'option explorer (global et general avec en plus les gros titre récents) la section theme (qui contient les rubriques dans l'hamburger) et
+la section émission (qui propose les dernières émission du média)
+
+
+https://www.cnewyork.net/
+Caractèristique:
+_Page très organisé avec un design sobre
+_Le schéma de navigation ressemble à celui de la page de notre projet (page principale -> gros titre rubrique confondu classé par ordre de popularité ex: n°1 foot
+et au dessus du contenu main on trouve une bar de navigation vers chaque rubrique -> football, tennis; rugby, cyclisme, basket etc...)
+_L'organisation de la page principal est plus vertical que ce que j'imaginais, on trouve une seul colonne avec tout les news emplié (dans notre cas j'avais plus pensé
+à deux colonne a gauche et a droit de la page)
+__Meme logique que le site echo (2 sous colonne dans la colonne centrale: à gauche: colonne qui liste tout les gros titres / à droite une colonne avec plusieurs sections
+(article les plus vue, lien vers la news letter, vidéo...)

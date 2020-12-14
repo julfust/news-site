@@ -1,0 +1,11 @@
+Home page
+desktop: https://wireframe.cc/ui86j1
+mobile: https://wireframe.cc/hFptxf
+
+Rubrique page
+desktop: https://wireframe.cc/KIiuWm
+mobile: https://wireframe.cc/kKOuxy
+
+News page
+desktop: https://wireframe.cc/oQf3ej
+mobile: https://wireframe.cc/XsbENn

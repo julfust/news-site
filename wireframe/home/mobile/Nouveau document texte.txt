@@ -1,0 +1,20 @@
+fitnesse@academy
+start up commencé il y a 2 ans en pleine expension
+problème coincé avec des outils et ils cherchent a recruter des alternants pour développer des nouveaux
+beaucoup de travail a distance car pas encore de locaux et contexte
+
+Dev bac spec php, front angular
+A deja recruté un alternant dev ops
+Api platforme pour dev rapidement api
+
+Le CIO pour la partie Back
+Moi pour la partie front
+
+react ou angular pas encore choisie
+dev progressif en agile
+
+formation au début avec des exercices
+
+Voir react (notament comment faire circuler les informations etc...)
+
+entreprise située à val d'europe
