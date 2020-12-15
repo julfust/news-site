@@ -83,7 +83,8 @@
 
                 .rubrique-title {
                     margin-bottom: 2.5vh;
-                    font-size: 4.5vw;
+                    text-align: left;
+                    font-size: 5.5vw;
                 }
 
                 .rubrique-main-article {
@@ -98,13 +99,39 @@
 
                     .main-article-text {
                         width: 100%;
-                        height: 8vh;
+                        height: 12vh;
+                        position: relative;
+
+                        .main-article-paragraph {
+                            margin: 0;
+                            font-size: 5.5vw;
+                            background-color: red;
+                            border: 1px solid black;
+                        }
+
+                        .main-article-button {
+                            width: 15%;
+                            height: 28%;                        
+                            position: absolute;
+                            display: block;
+                            font-size: 3vw;
+
+                            &:nth-child(2) {
+                                top: 73%;
+                                left: 69%;
+                            }
+
+                            &:nth-child(3) {
+                                top: 73%;
+                                left: 85%;
+                            }
+                        }
                     }
                 }
 
                 .rubrique-secondary-article {
                     width: 100%;
-                    height: 12vh;
+                    height: 14vh;
                     margin-bottom: 2.5vh;
                     display: flex;
                     justify-content: space-between;
@@ -114,13 +141,38 @@
                     }
 
                     .secondary-article-picture {
-                        width: 23.5%;
-                        height: 12vh;
+                        width: 29.5%;
+                        height: 14vh;
                     }
 
                     .secondary-article-text {
-                        width: 72.5%;
-                        height: 12vh;
+                        width: 66.5%;
+                        height: 14vh;
+                        position: relative;
+
+                        .secondary-article-paragraph {
+                            margin: 0;
+                            font-size: 4vw;
+                            background-color: red;
+                            border: 1px solid black;
+                        }
+
+                        .secondary-article-button {
+                            width: 23%;
+                            height: 23%;
+                            position: absolute;
+                            font-size: 3vw;
+
+                            &:nth-child(2) {
+                                top: 76%;
+                                left: 53%;
+                            }
+
+                            &:nth-child(3) {
+                                top: 76%;
+                                left: 77%;
+                            }
+                        }
                     }
                 }
             }
@@ -135,18 +187,42 @@
 
                 .episode-section-title {
                     margin-bottom: 2.5vh;
-                    font-size: 4.5vw;
+                    text-align: left;
+                    font-size: 5.5vw;
                 }
 
                 .episode-section-list-container {
                     width: 100%;
-                    display: flex;
-                    justify-content: space-between;
 
                     .episode-section-list {
-                        width: 47.5%;
-                        height: 30vh;
+                        width: 100%;
                         margin-bottom: 0;
+
+                        .episode-section-list-item {
+                            width: 100%;
+                            height: 8.5vh;
+                            margin-bottom: 2vh;
+                            display: flex;
+                            justify-content: space-between;
+                            background-color: yellowgreen;
+                            border: 1px solid black;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            .item-img {
+                                width: 20%;
+                                height: 100%;
+                                border: 1px solid red;
+                            }
+
+                            .item-description {
+                                width: 76%;
+                                height: 100%;
+                                border: 1px solid red;
+                            }
+                        }
                     }
                 }
             }
@@ -157,41 +233,40 @@
 
                 .trailer-section-title {
                     margin-bottom: 2.5vh;
-                    font-size: 4.5vw;
+                    text-align: left;
+                    font-size: 5.5vw;
                 }
 
                 .trailer-section-video {
                     width: 100%;
-                    height: 30vh;
+                    height: 34vh;
                 }
             }
 
             .aside-newsletter-section {
                 width: 100%;
-                margin-bottom: 5vh;
 
                 .newsletter-section-title {
                     margin-bottom: 2.5vh;
-                    font-size: 4.5vw;
+                    text-align: left;
+                    font-size: 5.5vw;
                 }
 
                 .newsletter-section-form {
                     width: 100%;
-                    height: 21vh;
-                }
-            }
+                    height: 25vh;
 
-            .aside-advertising-section {
-                width: 100%;
+                    .email-input {
+                        width: 100%;
+                        display: block;
+                        font-size: 5.5vw;
+                    }
 
-                .advertising-section-title {
-                    margin-bottom: 2.5vh;
-                    font-size: 4.5vw;
-                }
-
-                .advertising-section-form {
-                    width: 100%;
-                    height: 30vh;
+                    .submit-button {
+                        margin-top: 3vh;
+                        display: block;
+                        font-size: 5.5vw;
+                    }
                 }
             }
         }
@@ -202,7 +277,7 @@
         .footer-logo {
             height: 9vh;
             margin-top: 3.75vh;
-            margin-bottom: 2.5vh;
+            margin-bottom: 5vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -210,17 +285,57 @@
         }
 
         .footer-article {
-            height: 22.5vh;
             margin-bottom: 5vh;
+
+            .footer-article-title {
+                margin-bottom: 1vh;
+                font-size: 4vw;
+            }
+
+            .footer-article-paragraph {
+                margin-bottom: 1vh;
+                font-size: 4vw;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
 
         .footer-social-section {
-            height: 16.9vh;
+            height: 13vh;
             margin-bottom: 5vh;
+
+            .social-section-title {
+                margin-bottom: 4vh;
+                font-size: 4vw;
+            }
+
+            .social-media-list {
+                width: 90%;
+                height: 45%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .social-media-logo {
+                    width: 15%;
+                    height: 100%;
+                }
+            }
         }
 
         .footer-legal-section {
-            height: 16.9vh;
+
+            .legal-section-paragraph {
+                margin-bottom: 5vh;
+                font-size: 3vw;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }
