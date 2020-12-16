@@ -31,7 +31,6 @@
     }
 
     .row {
-
         *[class*="col"] {
             padding: 0;
         }
@@ -39,6 +38,10 @@
 
     .nav-bar {
         margin-bottom: 2.5vh;
+
+        &__ham-menu {
+            display: none;
+        }
 
         &__ham-btn {
             height: 9vh;
@@ -68,7 +71,7 @@
     .central-content {
         width: 95%;
         margin: auto;
-        margin-bottom: 5vh;
+        margin-bottom: 17vh;
 
         .news-section {
             width: 100%;
@@ -83,8 +86,8 @@
 
                 .rubrique-title {
                     margin-bottom: 2.5vh;
+                    font-size: 6vw;
                     text-align: left;
-                    font-size: 5.5vw;
                 }
 
                 .rubrique-main-article {
@@ -99,30 +102,28 @@
 
                     .main-article-text {
                         width: 100%;
-                        height: 12vh;
+                        height: 16vh;
                         position: relative;
 
                         .main-article-paragraph {
                             margin: 0;
-                            font-size: 5.5vw;
+                            font-size: 5vw;
                             background-color: red;
                             border: 1px solid black;
                         }
 
                         .main-article-button {
-                            width: 15%;
-                            height: 28%;                        
+                            width: 15%;                      
                             position: absolute;
+                            top: 80%;
                             display: block;
-                            font-size: 3vw;
+                            font-size: 2.8vw;
 
                             &:nth-child(2) {
-                                top: 73%;
                                 left: 69%;
                             }
 
                             &:nth-child(3) {
-                                top: 73%;
                                 left: 85%;
                             }
                         }
@@ -131,7 +132,6 @@
 
                 .rubrique-secondary-article {
                     width: 100%;
-                    height: 14vh;
                     margin-bottom: 2.5vh;
                     display: flex;
                     justify-content: space-between;
@@ -152,24 +152,22 @@
 
                         .secondary-article-paragraph {
                             margin: 0;
-                            font-size: 4vw;
+                            font-size: 3.5vw;
                             background-color: red;
                             border: 1px solid black;
                         }
 
                         .secondary-article-button {
                             width: 23%;
-                            height: 23%;
                             position: absolute;
-                            font-size: 3vw;
+                            top: 76%;
+                            font-size: 2.8vw;
 
                             &:nth-child(2) {
-                                top: 76%;
                                 left: 53%;
                             }
 
                             &:nth-child(3) {
-                                top: 76%;
                                 left: 77%;
                             }
                         }
@@ -187,40 +185,48 @@
 
                 .episode-section-title {
                     margin-bottom: 2.5vh;
+                    font-size: 6vw;
                     text-align: left;
-                    font-size: 5.5vw;
                 }
 
-                .episode-section-list-container {
+                .episode-section-list {
                     width: 100%;
+                    margin-bottom: 0;
 
-                    .episode-section-list {
+                    .episode-section-list-item {
                         width: 100%;
-                        margin-bottom: 0;
+                        margin-bottom: 2vh;
+                        display: flex;
+                        justify-content: space-between;
 
-                        .episode-section-list-item {
-                            width: 100%;
-                            height: 8.5vh;
-                            margin-bottom: 2vh;
-                            display: flex;
-                            justify-content: space-between;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .item-img {
+                            width: 22%;
+                            height: 10vh;
+                            background-color: yellowgreen;
+                            border: 1px solid black;
+                        }
+
+                        .item-description {
+                            width: 74%;
                             background-color: yellowgreen;
                             border: 1px solid black;
 
-                            &:last-child {
+                            .item-description-title {
+                                margin-bottom: 1.8vh;
+                                font-size: 3.5vw;
+                                text-align: left;
+                                background-color: red;
+                            }
+
+                            .item-description-paragraph {
                                 margin-bottom: 0;
-                            }
-
-                            .item-img {
-                                width: 20%;
-                                height: 100%;
-                                border: 1px solid red;
-                            }
-
-                            .item-description {
-                                width: 76%;
-                                height: 100%;
-                                border: 1px solid red;
+                                font-size: 3.5vw;
+                                text-align: left;
+                                background-color: red;
                             }
                         }
                     }
@@ -233,8 +239,8 @@
 
                 .trailer-section-title {
                     margin-bottom: 2.5vh;
+                    font-size: 6vw;
                     text-align: left;
-                    font-size: 5.5vw;
                 }
 
                 .trailer-section-video {
@@ -248,24 +254,23 @@
 
                 .newsletter-section-title {
                     margin-bottom: 2.5vh;
+                    font-size: 6vw;
                     text-align: left;
-                    font-size: 5.5vw;
                 }
 
                 .newsletter-section-form {
                     width: 100%;
-                    height: 25vh;
 
                     .email-input {
                         width: 100%;
+                        margin-bottom: 3vh;
                         display: block;
-                        font-size: 5.5vw;
+                        font-size: 5vw;
                     }
 
                     .submit-button {
-                        margin-top: 3vh;
                         display: block;
-                        font-size: 5.5vw;
+                        font-size: 5vw;
                     }
                 }
             }
@@ -289,12 +294,12 @@
 
             .footer-article-title {
                 margin-bottom: 1vh;
-                font-size: 4vw;
+                font-size: 3.5vw;
             }
 
             .footer-article-paragraph {
                 margin-bottom: 1vh;
-                font-size: 4vw;
+                font-size: 3.5vw;
 
                 &:last-child {
                     margin-bottom: 0;
@@ -303,25 +308,22 @@
         }
 
         .footer-social-section {
-            height: 13vh;
             margin-bottom: 5vh;
 
             .social-section-title {
                 margin-bottom: 4vh;
-                font-size: 4vw;
+                font-size: 3.5vw;
             }
 
             .social-media-list {
                 width: 90%;
-                height: 45%;
                 margin: auto;
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
 
                 .social-media-logo {
                     width: 15%;
-                    height: 100%;
+                    height: 5.5vh;
                 }
             }
         }
