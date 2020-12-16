@@ -1,4 +1,10 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .container-fluid {
+    position: relative;
     border: 1px solid black;
 
     & > * {
@@ -37,10 +43,28 @@
     }
 
     .nav-bar {
+        height: 9vh;
         margin-bottom: 2.5vh;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
 
         &__ham-menu {
+            height: 100vh;
             display: none;
+
+            .ham-menu-item {
+                height: 9vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & > a {
+                    color: black;
+                    font-size: 6vw;
+                }
+            }
         }
 
         &__ham-btn {
@@ -66,12 +90,21 @@
             align-items: center;
             font-size: 7.5vw;
         }
+
+        &__srh-input {
+            display: none;
+
+            & > input {
+                height: 100%;
+            }
+        }
     }
     
     .central-content {
         width: 95%;
         margin: auto;
         margin-bottom: 17vh;
+        z-index: 0;
 
         .news-section {
             width: 100%;
@@ -98,6 +131,15 @@
                         width: 100%;
                         height: 30vh;
                         margin-bottom: 1vh;
+
+                        .diapo-picture-container {
+                            height: 30vh;
+
+                            & > img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
                     }
 
                     .main-article-text {
@@ -178,6 +220,7 @@
         
         .aside-section {
             width: 100%;
+            z-index: 0;
 
             .aside-episode-section {
                 width: 100%;
@@ -278,6 +321,7 @@
     }
 
     .footer-section {
+        z-index: 0;
 
         .footer-logo {
             height: 9vh;

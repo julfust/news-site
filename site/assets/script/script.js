@@ -1,25 +1,46 @@
 (function() {
-    let checked = false;
-    let navBarButton = document.querySelector(".nav-bar__ham-btn");
+    let hamActive = false
+    let searchActive = false
+
+    let hamButton = document.querySelector(".nav-bar__ham-btn")
+    let searchButton = document.querySelector(".nav-bar__srh-btn")
+
     let navBarLogo = document.querySelector(".nav-bar__logo")
     let navBarMenu = document.querySelector(".nav-bar__ham-menu")
+    let navBarSearchInput = document.querySelector(".nav-bar__srh-input")
 
-    console.log(navBarButton, navBarLogo, navBarMenu)
+    hamButton.addEventListener("click", function(){
 
-    navBarButton.addEventListener("click", function(){
-        console.log("Debug")
-
-        if(!checked)
+        if(!hamActive && !searchActive)
         {
             navBarLogo.style.display = "none"
             navBarMenu.style.display = "block"
-            checked = true
+            hamActive = true
         }
 
-        else {
+        else if (hamActive && !searchActive) {
             navBarLogo.style.display = "flex"
             navBarMenu.style.display = "none"
-            checked = false
+            hamActive = false
+        }
+    })
+
+    searchButton.addEventListener("click", function(){
+        
+        if(!searchActive && !hamActive)
+        {
+            navBarLogo.style.display = "none"
+            navBarSearchInput.style.display = "block"
+            searchButton.innerHTML = "&#10006;"
+            searchActive = true
+        }
+
+        else if(searchActive && !hamActive)
+        {
+            navBarLogo.style.display = "flex"
+            navBarSearchInput.style.display = "none"
+            searchButton.innerHTML = "🔍"
+            searchActive = false
         }
     })
 })()

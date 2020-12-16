@@ -1,4 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .container-fluid {
+  position: relative;
   border: 1px solid black;
 }
 
@@ -36,11 +42,36 @@
 }
 
 .container-fluid .nav-bar {
+  height: 9vh;
   margin-bottom: 2.5vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .container-fluid .nav-bar__ham-menu {
+  height: 100vh;
   display: none;
+}
+
+.container-fluid .nav-bar__ham-menu .ham-menu-item {
+  height: 9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-fluid .nav-bar__ham-menu .ham-menu-item > a {
+  color: black;
+  font-size: 6vw;
 }
 
 .container-fluid .nav-bar__ham-btn {
@@ -85,10 +116,19 @@
   font-size: 7.5vw;
 }
 
+.container-fluid .nav-bar__srh-input {
+  display: none;
+}
+
+.container-fluid .nav-bar__srh-input > input {
+  height: 100%;
+}
+
 .container-fluid .central-content {
   width: 95%;
   margin: auto;
   margin-bottom: 17vh;
+  z-index: 0;
 }
 
 .container-fluid .central-content .news-section {
@@ -119,6 +159,15 @@
   width: 100%;
   height: 30vh;
   margin-bottom: 1vh;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique .rubrique-main-article .main-article-picture .diapo-picture-container {
+  height: 30vh;
+}
+
+.container-fluid .central-content .news-section .news-section-rubrique .rubrique-main-article .main-article-picture .diapo-picture-container > img {
+  width: 100%;
+  height: 100%;
 }
 
 .container-fluid .central-content .news-section .news-section-rubrique .rubrique-main-article .main-article-text {
@@ -200,6 +249,7 @@
 
 .container-fluid .central-content .aside-section {
   width: 100%;
+  z-index: 0;
 }
 
 .container-fluid .central-content .aside-section .aside-episode-section {
@@ -300,6 +350,10 @@
 .container-fluid .central-content .aside-section .aside-newsletter-section .newsletter-section-form .submit-button {
   display: block;
   font-size: 5vw;
+}
+
+.container-fluid .footer-section {
+  z-index: 0;
 }
 
 .container-fluid .footer-section .footer-logo {
