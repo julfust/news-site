@@ -1,3 +1,9 @@
+@mixin desktop_layout {
+    @media all and (min-width: 992px) {
+        @content;
+    }
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,6 +12,11 @@ html, body {
 .container-fluid {
     position: relative;
     border: 1px solid black;
+
+    @include desktop_layout {
+        padding: 0;
+        overflow: hidden;
+    }
 
     & > * {
         background-color: #444;
@@ -49,6 +60,10 @@ html, body {
         top: 0;
         left: 0;
         z-index: 1;
+
+        @include desktop_layout {
+            display: none;
+        }
 
         &__ham-menu {
             height: 100vh;
@@ -99,6 +114,46 @@ html, body {
             }
         }
     }
+
+    .desk-nav {
+        height: 9.45vh;
+        margin-bottom: 9.45vh;
+        display: none;
+
+        @include desktop_layout {
+            display: flex;
+        }
+
+        &__logo {
+            height: 9.45vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5vw;
+        }
+
+        &__link {
+            height: 9.45vh;
+            font-size: 1.17vw;
+
+            & > a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+            }
+        }
+
+        &__srh-btn {
+            height: 9.45vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.625vw;
+        }
+    }
     
     .central-content {
         width: 95%;
@@ -106,34 +161,61 @@ html, body {
         margin-bottom: 17vh;
         z-index: 0;
 
+        @include desktop_layout {
+            width: unset;
+            margin-right: -15px;
+            margin-left: -15px;
+            margin-bottom: 18.9vh;
+        }
+
         .news-section {
             width: 100%;
             margin-bottom: 5vh;
+
+            @include desktop_layout {
+                margin-bottom: 0;
+            }
             
             .news-section-rubrique {
                 width: 100%;
 
                 &:nth-child(1) {
                     margin-bottom: 5vh;
+
+                    @include desktop_layout {
+                        margin-bottom: 11.34vh;
+                    }
                 }
 
                 .rubrique-title {
                     margin-bottom: 2.5vh;
                     font-size: 6vw;
                     text-align: left;
+
+                    @include desktop_layout {
+                        margin-bottom: 3.78vh;
+                        font-size: 2.5vw;
+                    }
                 }
 
                 .rubrique-main-article {
                     width: 100%;
                     margin-bottom: 2.5vh;
 
+                    @include desktop_layout {
+                        margin-bottom: 3.78vh;
+                    }
+
                     .main-article-picture {
                         width: 100%;
-                        height: 30vh;
                         margin-bottom: 1vh;
 
                         .diapo-picture-container {
                             height: 30vh;
+
+                            @include desktop_layout {
+                                height: 47.25vh;
+                            }
 
                             & > img {
                                 width: 100%;
@@ -147,11 +229,19 @@ html, body {
                         height: 16vh;
                         position: relative;
 
+                        @include desktop_layout {
+                            height: 24vh;
+                        }
+
                         .main-article-paragraph {
                             margin: 0;
                             font-size: 5vw;
                             background-color: red;
                             border: 1px solid black;
+
+                            @include desktop_layout {
+                                font-size: 2.5vw;
+                            }
                         }
 
                         .main-article-button {
@@ -160,6 +250,12 @@ html, body {
                             top: 80%;
                             display: block;
                             font-size: 2.8vw;
+
+                            @include desktop_layout {
+                                width: 15%;
+                                top: 79%;
+                                font-size: 1.4vw;
+                            }
 
                             &:nth-child(2) {
                                 left: 69%;
@@ -178,6 +274,10 @@ html, body {
                     display: flex;
                     justify-content: space-between;
 
+                    @include desktop_layout {
+                        margin-bottom: 3.78vh;
+                    }
+
                     &:nth-child(5) {
                         margin-bottom: 0;
                     }
@@ -185,6 +285,10 @@ html, body {
                     .secondary-article-picture {
                         width: 29.5%;
                         height: 14vh;
+
+                        @include desktop_layout {
+                            height: 21vh;
+                        }
                     }
 
                     .secondary-article-text {
@@ -192,11 +296,19 @@ html, body {
                         height: 14vh;
                         position: relative;
 
+                        @include desktop_layout {
+                            height: 21vh;
+                        }
+
                         .secondary-article-paragraph {
                             margin: 0;
                             font-size: 3.5vw;
                             background-color: red;
                             border: 1px solid black;
+
+                            @include desktop_layout {
+                                font-size: 1.75vw;
+                            }
                         }
 
                         .secondary-article-button {
@@ -205,12 +317,26 @@ html, body {
                             top: 76%;
                             font-size: 2.8vw;
 
+                            @include desktop_layout {
+                                width: 17%;
+                                top: 83%;
+                                font-size: 1vw;
+                            }
+
                             &:nth-child(2) {
                                 left: 53%;
+
+                                @include desktop_layout {
+                                    left: 65%;
+                                }
                             }
 
                             &:nth-child(3) {
                                 left: 77%;
+
+                                @include desktop_layout {
+                                    left: 83%;
+                                }
                             }
                         }
                     }
@@ -222,14 +348,27 @@ html, body {
             width: 100%;
             z-index: 0;
 
+            @include desktop_layout {
+                height: 0%;
+            }
+
             .aside-episode-section {
                 width: 100%;
                 margin-bottom: 5vh;
+
+                @include desktop_layout {
+                    margin-bottom: 7.56vh;
+                }
 
                 .episode-section-title {
                     margin-bottom: 2.5vh;
                     font-size: 6vw;
                     text-align: left;
+
+                    @include desktop_layout {
+                        margin-bottom: 3.78vh;
+                        font-size: 2.5vw;
+                    }
                 }
 
                 .episode-section-list {
@@ -251,6 +390,10 @@ html, body {
                             height: 10vh;
                             background-color: yellowgreen;
                             border: 1px solid black;
+
+                            @include desktop_layout {
+                                height: 10.632vh;
+                            }
                         }
 
                         .item-description {
@@ -258,11 +401,19 @@ html, body {
                             background-color: yellowgreen;
                             border: 1px solid black;
 
+                            @include desktop_layout {
+                                height: 10.632vh;
+                            }
+
                             .item-description-title {
                                 margin-bottom: 1.8vh;
                                 font-size: 3.5vw;
                                 text-align: left;
                                 background-color: red;
+
+                                @include desktop_layout {
+                                    font-size: 1vw;;
+                                }
                             }
 
                             .item-description-paragraph {
@@ -270,6 +421,10 @@ html, body {
                                 font-size: 3.5vw;
                                 text-align: left;
                                 background-color: red;
+
+                                @include desktop_layout {
+                                    font-size: 1vw;
+                                }
                             }
                         }
                     }
@@ -280,15 +435,28 @@ html, body {
                 width: 100%;
                 margin-bottom: 5vh;
 
+                @include desktop_layout {
+                    margin-bottom: 7.56vh;
+                }
+
                 .trailer-section-title {
                     margin-bottom: 2.5vh;
                     font-size: 6vw;
                     text-align: left;
+
+                    @include desktop_layout {
+                        margin-bottom: 3.78vh;
+                        font-size: 2.5vw;
+                    }
                 }
 
                 .trailer-section-video {
                     width: 100%;
                     height: 34vh;
+
+                    @include desktop_layout {
+                        height: 37.8vh;
+                    }
                 }
             }
 
@@ -299,6 +467,11 @@ html, body {
                     margin-bottom: 2.5vh;
                     font-size: 6vw;
                     text-align: left;
+
+                    @include desktop_layout {
+                        margin-bottom: 3.78vh;
+                        font-size: 2.5vw;
+                    }
                 }
 
                 .newsletter-section-form {
@@ -309,11 +482,20 @@ html, body {
                         margin-bottom: 3vh;
                         display: block;
                         font-size: 5vw;
+
+                        @include desktop_layout {
+                            margin-bottom: 5vh;
+                            font-size: 1.5vw;
+                        }
                     }
 
                     .submit-button {
                         display: block;
                         font-size: 5vw;
+
+                        @include desktop_layout {
+                            font-size: 1.5vw;
+                        }
                     }
                 }
             }
@@ -331,14 +513,31 @@ html, body {
             justify-content: center;
             align-items: center;
             font-size: 9.5vw;
+
+            @include desktop_layout {
+                height: 9.45vh;
+                margin-top: 9vh;
+                margin-bottom: 3.78vh;
+                font-size: 3vw;
+            }
         }
 
         .footer-article {
             margin-bottom: 5vh;
 
+            @include desktop_layout {
+                margin-top: 5vh;
+                margin-bottom: 3.78vh;
+            }
+
             .footer-article-title {
                 margin-bottom: 1vh;
                 font-size: 3.5vw;
+
+                @include desktop_layout {
+                    margin-bottom: 2vh;
+                    font-size: 1.25vw;
+                }
             }
 
             .footer-article-paragraph {
@@ -348,15 +547,35 @@ html, body {
                 &:last-child {
                     margin-bottom: 0;
                 }
+
+                @include desktop_layout {
+                    margin-bottom: 2vh;
+                    font-size: 1.25vw;
+                }
+
+                & > a {
+                    color: black;
+                }
             }
         }
 
         .footer-social-section {
             margin-bottom: 5vh;
 
+            @include desktop_layout {
+                height: 0%;
+                margin-top: 5vh;
+                margin-bottom: 3.78vh;
+            }
+
             .social-section-title {
                 margin-bottom: 4vh;
                 font-size: 3.5vw;
+
+                @include desktop_layout {
+                    margin-bottom: 3.78vh;
+                    font-size: 1.25vw;
+                }
             }
 
             .social-media-list {
@@ -368,18 +587,47 @@ html, body {
                 .social-media-logo {
                     width: 15%;
                     height: 5.5vh;
+
+                    @include desktop_layout {
+                        width: 18%;
+                    }
                 }
             }
         }
 
         .footer-legal-section {
 
+            @include desktop_layout {
+                display: flex;
+                justify-content: space-between;
+            }
+
             .legal-section-paragraph {
                 margin-bottom: 5vh;
                 font-size: 3vw;
 
+                &:first-child {
+
+                    @include desktop_layout {
+                        margin-left: 16.5vw;
+                    }
+                }
+
                 &:last-child {
                     margin-bottom: 0;
+
+                    @include desktop_layout {
+                        margin-right: 16.5vw;
+                    }
+                }
+
+                @include desktop_layout {
+                    margin-bottom: 0;
+                    font-size: 1vw;
+                }
+
+                & > a {
+                    color: black;
                 }
             }
         }
