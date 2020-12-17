@@ -115,235 +115,128 @@ html, body {
         }
     }
 
-    .desk-nav {
-        height: 9.45vh;
-        margin-bottom: 9.45vh;
-        display: none;
-
-        @include desktop_layout {
-            display: flex;
-        }
-
-        &__logo {
-            height: 9.45vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 3.5vw;
-        }
-
-        &__link {
-            height: 9.45vh;
-            font-size: 1.17vw;
-
-            & > a {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: black;
-            }
-        }
-
-        &__srh-btn {
-            height: 9.45vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.625vw;
-        }
-    }
-    
     .central-content {
         width: 95%;
         margin: auto;
         margin-bottom: 17vh;
         z-index: 0;
 
-        @include desktop_layout {
-            width: unset;
-            margin-right: -15px;
-            margin-left: -15px;
-            margin-bottom: 18.9vh;
+        .rubrique-title {
+            font-size: 6vw;
+            margin-bottom: 1.6vh;
+        }
+
+        .classement-setting {
+            margin-bottom: 3.2vh;
+
+            .classement-setting-paragraph {
+                margin: 0;
+                font-size: 5vw;
+            }
+
+            .radio-container {
+                width: 80%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                font-size: 5vw;
+            }
         }
 
         .news-section {
-            width: 100%;
-            margin-bottom: 5vh;
+            margin-bottom: 3.2vh;
 
-            @include desktop_layout {
-                margin-bottom: 0;
-            }
-            
-            .news-section-rubrique {
-                width: 100%;
+            .rubrique-main-article {
+                margin-bottom: 3.2vh;
 
-                &:nth-child(1) {
-                    margin-bottom: 5vh;
-
-                    @include desktop_layout {
-                        margin-bottom: 11.34vh;
-                    }
+                .main-article-video {
+                    height: 37.5vh;
+                    margin-bottom: 1vh;
                 }
 
-                .rubrique-title {
-                    margin-bottom: 2.5vh;
-                    font-size: 6vw;
-                    text-align: left;
+                .main-article-text {
+                    height: 20vh;
+                    position: relative;
 
-                    @include desktop_layout {
-                        margin-bottom: 3.78vh;
-                        font-size: 2.5vw;
-                    }
-                }
-
-                .rubrique-main-article {
-                    width: 100%;
-                    margin-bottom: 2.5vh;
-
-                    @include desktop_layout {
-                        margin-bottom: 3.78vh;
+                    .main-article-title {
+                        margin-bottom: 2vh;
+                        font-size: 5vw;
                     }
 
-                    .main-article-picture {
-                        width: 100%;
-                        margin-bottom: 1vh;
-
-                        .diapo-picture-container {
-                            height: 30vh;
-
-                            @include desktop_layout {
-                                height: 47.25vh;
-                            }
-
-                            & > img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-
-                    .main-article-text {
-                        width: 100%;
-                        height: 16vh;
-                        position: relative;
-
-                        @include desktop_layout {
-                            height: 24vh;
-                        }
-
-                        .main-article-paragraph {
-                            margin: 0;
-                            font-size: 5vw;
-                            background-color: red;
-                            border: 1px solid black;
-
-                            @include desktop_layout {
-                                font-size: 2.5vw;
-                            }
-                        }
-
-                        .main-article-button {
-                            width: 15%;                      
-                            position: absolute;
-                            top: 80%;
-                            display: block;
-                            font-size: 2.8vw;
-
-                            @include desktop_layout {
-                                width: 15%;
-                                top: 79%;
-                                font-size: 1.4vw;
-                            }
-
-                            &:nth-child(2) {
-                                left: 69%;
-                            }
-
-                            &:nth-child(3) {
-                                left: 85%;
-                            }
-                        }
-                    }
-                }
-
-                .rubrique-secondary-article {
-                    width: 100%;
-                    margin-bottom: 2.5vh;
-                    display: flex;
-                    justify-content: space-between;
-
-                    @include desktop_layout {
-                        margin-bottom: 3.78vh;
-                    }
-
-                    &:nth-child(5) {
+                    .main-article-paragraph {
                         margin-bottom: 0;
+                        font-size: 3.5vw;
                     }
 
-                    .secondary-article-picture {
-                        width: 29.5%;
-                        height: 14vh;
+                    .main-article-button {
+                        width: 14%;
+                        height: 2.6vh;
+                        position: absolute;
+                        top: 87%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 3.5vw;
 
-                        @include desktop_layout {
-                            height: 21vh;
+                        &:nth-child(3) {
+                            left: 71%;
+                        }
+
+                        &:nth-child(4) {
+                            left: 86%;
                         }
                     }
+                }
+            }
 
-                    .secondary-article-text {
-                        width: 66.5%;
-                        height: 14vh;
-                        position: relative;
+            .rubrique-secondary-article {
+                margin-bottom: 3.2vh;
+                position: relative;
 
-                        @include desktop_layout {
-                            height: 21vh;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .secondary-article-picture {
+                    height: 28.18vh;
+                    margin-bottom: 1vh;
+                }
+
+                .secondary-article-text {
+                    height: 15.02vh;
+
+                    .main-article-title {
+                        margin-bottom: 1.5vh;
+                        font-size: 3.78vw;
+                    }
+
+                    .main-article-paragraph {
+                        margin-bottom: 0;
+                        font-size: 3vw;
+                    }
+
+                    .main-article-button {
+                        width: 14%;
+                        height: 1.95vh;
+                        position: absolute;
+                        top: 95%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 2.5vw;
+
+                        &:nth-child(3) {
+                            left: 70%;
                         }
 
-                        .secondary-article-paragraph {
-                            margin: 0;
-                            font-size: 3.5vw;
-                            background-color: red;
-                            border: 1px solid black;
-
-                            @include desktop_layout {
-                                font-size: 1.75vw;
-                            }
-                        }
-
-                        .secondary-article-button {
-                            width: 23%;
-                            position: absolute;
-                            top: 76%;
-                            font-size: 2.8vw;
-
-                            @include desktop_layout {
-                                width: 17%;
-                                top: 83%;
-                                font-size: 1vw;
-                            }
-
-                            &:nth-child(2) {
-                                left: 53%;
-
-                                @include desktop_layout {
-                                    left: 65%;
-                                }
-                            }
-
-                            &:nth-child(3) {
-                                left: 77%;
-
-                                @include desktop_layout {
-                                    left: 83%;
-                                }
-                            }
+                        &:nth-child(4) {
+                            left: 85.5%;
                         }
                     }
                 }
             }
         }
-        
+
         .aside-section {
             width: 100%;
             z-index: 0;
