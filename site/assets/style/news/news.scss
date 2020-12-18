@@ -178,56 +178,6 @@ html, body {
             margin-bottom: 18.9vh;
         }
 
-        .rubrique-title {
-            font-size: 6vw;
-            margin-bottom: 1.6vh;
-
-            @include desktop_layout {
-                margin-bottom: 7.56vh;
-                font-size: 2.5vw;
-            }
-        }
-
-        .classement-setting {
-            margin-bottom: 3.2vh;
-
-            @include desktop_layout {
-                margin-bottom: 7.56vh;
-            }
-
-            .classement-setting-paragraph {
-                margin: 0;
-                font-size: 5vw;
-
-                @include desktop_layout {
-                    margin-bottom: 3.78vh;
-                    font-size: 1.75vw;
-                }
-            }
-
-            .radio-container {
-                width: 80%;
-                margin: auto;
-                display: flex;
-                justify-content: space-between;
-                font-size: 5vw;
-
-                @include desktop_layout {
-                    width: 60%;
-                    font-size: 1.4vw;
-                }
-
-                .radio-item {
-                    display: flex;
-                    align-items: center;
-
-                    label {
-                        margin: 0;
-                    }
-                }
-            }
-        }
-
         .news-section {
             margin-bottom: 3.2vh;
 
@@ -235,140 +185,112 @@ html, body {
                 margin-bottom: 0;
             }
 
-            .rubrique-main-article {
-                margin-bottom: 3.2vh;
+            .news-title {
+                margin-bottom: 1.6vh;
+                font-size: 6vw;
 
                 @include desktop_layout {
                     margin-bottom: 3.78vh;
+                    font-size: 3vw;
                 }
+            }
 
-                .main-article-video {
-                    height: 37.5vh;
-                    margin-bottom: 1vh;
+            .news-sub-title {
+                margin-bottom: 1.6vh;
+                font-size: 4vw;
+
+                @include desktop_layout {
+                    margin-bottom: 3.78vh;
+                    font-size: 1.75vw;
+                }
+            }
+
+            .news-picture {
+                height: 36vh;
+                margin-bottom: 3.2vh;
+
+                @include desktop_layout {
+                    height: 60vh;
+                    margin-bottom: 7.56vh;
+                }
+            }
+
+            .news-paragraph {
+                margin-bottom: 3.2vh;
+
+                .news-paragraph-title {
+                    margin-bottom: 1.6vh;
+                    font-size: 5vw;
+                    text-align: left;
 
                     @include desktop_layout {
-                        height: 59.06vh;
-                        margin-bottom: 2vh;
+                        margin-bottom: 3.78vh;
+                        font-size: 2.5vw;
                     }
                 }
 
-                .main-article-text {
-                    height: 20vh;
-                    position: relative;
+                .news-pargraph-text {
+                    height: 32vh;
+                    margin-bottom: 0;
+                    font-size: 3.5vw;
+                    text-align: left;
 
                     @include desktop_layout {
-                        height: 31.48vh;
-                    }
-
-                    .main-article-title {
-                        margin-bottom: 2vh;
-                        font-size: 5vw;
-
-                        @include desktop_layout {
-                            font-size: 2.5vw;
-                        }
-                    }
-
-                    .main-article-paragraph {
-                        margin-bottom: 0;
-                        font-size: 3.5vw;
-
-                        @include desktop_layout {
-                            font-size: 1.5vw;
-                        }
-                    }
-
-                    .main-article-button {
-                        width: 14%;
-                        height: 2.6vh;
-                        position: absolute;
-                        top: 87%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 3.5vw;
-
-                        &:nth-child(3) {
-                            left: 71%;
-                        }
-
-                        &:nth-child(4) {
-                            left: 86%;
-                        }
-
-                        @include desktop_layout {
-                            height: 4.09vh;
-                            font-size: 1.75vw;
-                        }
+                        height: 63.53vh;
+                        font-size: 1.75vw;
                     }
                 }
             }
 
-            .rubrique-secondary-article {
+            .news-video {
                 margin-bottom: 3.2vh;
-                position: relative;
 
-                &:last-child {
-                    margin-bottom: 0;
-                }
-
-                .secondary-article-picture {
-                    height: 28.18vh;
-                    margin-bottom: 1vh;
+                .news-video-title {
+                    margin-bottom: 1.6vh;
+                    font-size: 5vw;
 
                     @include desktop_layout {
-                        height: 44.38vh;
-                        margin-bottom: 2vh;
-                    }
-                }
-
-                .secondary-article-text {
-                    height: 15.02vh;
-
-                    @include desktop_layout {
-                        height: 23.64vh;
-                    }
-
-                    .main-article-title {
-                        margin-bottom: 1.5vh;
-                        font-size: 3.78vw;
-
-                        @include desktop_layout {
-                            font-size: 2vw;
-                        }
-                    }
-
-                    .main-article-paragraph {
-                        margin-bottom: 0;
-                        font-size: 3vw;
-
-                        @include desktop_layout {
-                            font-size: 1.4vw;
-                        }
-                    }
-
-                    .main-article-button {
-                        width: 14%;
-                        height: 1.95vh;
-                        position: absolute;
-                        top: 95%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        margin-bottom: 3.78vh;
                         font-size: 2.5vw;
+                        text-align: left;
+                    }
+                }
 
-                        &:nth-child(3) {
-                            left: 70%;
-                        }
+                .news-video-player {
+                    height: 30.4vh;
 
-                        &:nth-child(4) {
-                            left: 85.5%;
-                        }
+                    @include desktop_layout {
+                        height: 60.34vh;
+                    }
+                }
+            }
 
-                        @include desktop_layout {
-                            height: 2.9vh;
-                            font-size: 1.25vw;
-                        }
+            .news-gallery {
+
+                .news-gallery-title {
+                    margin-bottom: 1.6vh;
+                    font-size: 5vw;
+
+                    @include desktop_layout {
+                        margin-bottom: 3.78vh;
+                        font-size: 2.5vw;
+                        text-align: left;
+                    }
+                }
+
+                .news-gallery-container {
+                    height: 30.4vh;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+
+                    @include desktop_layout {
+                        height: 68.04vh;
+                    }
+
+                    .news-gallery-img {
+                        width: 22%;
+                        height: 26%;
                     }
                 }
             }
