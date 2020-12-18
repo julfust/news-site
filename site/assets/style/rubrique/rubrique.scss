@@ -74,6 +74,7 @@ html, body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                font-size: 6vw;
 
                 & > a {
                     color: black;
@@ -115,6 +116,55 @@ html, body {
         }
     }
 
+    .desk-nav {
+        height: 9.45vh;
+        margin-bottom: 9.45vh;
+        display: none;
+
+        @include desktop_layout {
+            display: flex;
+        }
+
+        &__logo {
+            height: 9.45vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5vw;
+        }
+
+        &__link {
+            height: 9.45vh;
+            font-size: 1.17vw;
+
+            & > a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+            }
+        }
+
+        &__srh-btn {
+            height: 9.45vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.625vw;
+        }
+
+        &__srh-input {
+            display: none;
+
+            & > input {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
     .central-content {
         width: 95%;
         margin: auto;
@@ -124,14 +174,28 @@ html, body {
         .rubrique-title {
             font-size: 6vw;
             margin-bottom: 1.6vh;
+
+            @include desktop_layout {
+                margin-bottom: 7.56vh;
+                font-size: 2.5vw;
+            }
         }
 
         .classement-setting {
             margin-bottom: 3.2vh;
 
+            @include desktop_layout {
+                margin-bottom: 7.56vh;
+            }
+
             .classement-setting-paragraph {
                 margin: 0;
                 font-size: 5vw;
+
+                @include desktop_layout {
+                    margin-bottom: 3.78vh;
+                    font-size: 1.75vw;
+                }
             }
 
             .radio-container {
@@ -140,6 +204,20 @@ html, body {
                 display: flex;
                 justify-content: space-between;
                 font-size: 5vw;
+
+                @include desktop_layout {
+                    width: 60%;
+                    font-size: 1.4vw;
+                }
+
+                .radio-item {
+                    display: flex;
+                    align-items: center;
+
+                    label {
+                        margin: 0;
+                    }
+                }
             }
         }
 
@@ -149,23 +227,44 @@ html, body {
             .rubrique-main-article {
                 margin-bottom: 3.2vh;
 
+                @include desktop_layout {
+                    margin-bottom: 3.78vh;
+                }
+
                 .main-article-video {
                     height: 37.5vh;
                     margin-bottom: 1vh;
+
+                    @include desktop_layout {
+                        height: 59.06vh;
+                        margin-bottom: 2vh;
+                    }
                 }
 
                 .main-article-text {
                     height: 20vh;
                     position: relative;
 
+                    @include desktop_layout {
+                        height: 31.48vh;
+                    }
+
                     .main-article-title {
                         margin-bottom: 2vh;
                         font-size: 5vw;
+
+                        @include desktop_layout {
+                            font-size: 2.5vw;
+                        }
                     }
 
                     .main-article-paragraph {
                         margin-bottom: 0;
                         font-size: 3.5vw;
+
+                        @include desktop_layout {
+                            font-size: 1.5vw;
+                        }
                     }
 
                     .main-article-button {
@@ -185,6 +284,11 @@ html, body {
                         &:nth-child(4) {
                             left: 86%;
                         }
+
+                        @include desktop_layout {
+                            height: 4.09vh;
+                            font-size: 1.75vw;
+                        }
                     }
                 }
             }
@@ -200,19 +304,36 @@ html, body {
                 .secondary-article-picture {
                     height: 28.18vh;
                     margin-bottom: 1vh;
+
+                    @include desktop_layout {
+                        height: 44.38vh;
+                        margin-bottom: 2vh;
+                    }
                 }
 
                 .secondary-article-text {
                     height: 15.02vh;
 
+                    @include desktop_layout {
+                        height: 23.64vh;
+                    }
+
                     .main-article-title {
                         margin-bottom: 1.5vh;
                         font-size: 3.78vw;
+
+                        @include desktop_layout {
+                            font-size: 2vw;
+                        }
                     }
 
                     .main-article-paragraph {
                         margin-bottom: 0;
                         font-size: 3vw;
+
+                        @include desktop_layout {
+                            font-size: 1.4vw;
+                        }
                     }
 
                     .main-article-button {
@@ -231,6 +352,11 @@ html, body {
 
                         &:nth-child(4) {
                             left: 85.5%;
+                        }
+
+                        @include desktop_layout {
+                            height: 2.9vh;
+                            font-size: 1.25vw;
                         }
                     }
                 }

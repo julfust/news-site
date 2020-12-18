@@ -80,6 +80,7 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 6vw;
 }
 
 .container-fluid .nav-bar__ham-menu .ham-menu-item > a {
@@ -197,6 +198,15 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2.625vw;
+}
+
+.container-fluid .desk-nav__srh-input {
+  display: none;
+}
+
+.container-fluid .desk-nav__srh-input > input {
+  width: 100%;
+  height: 100%;
 }
 
 .container-fluid .central-content {

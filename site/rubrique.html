@@ -12,7 +12,8 @@
     <div class="container-fluid">
         <nav class="row nav-bar">
             <ul class="col-6 nav-bar__ham-menu">
-                <li class="ham-menu-item"><a href="#">Logo min</a></li>
+                <li class="ham-menu-item">LOGO MIN</li>
+                <li class="ham-menu-item"><a href="#">Home</a></li>
                 <li class="ham-menu-item"><a href="#">Animé</a></li>
                 <li class="ham-menu-item"><a href="#">Manga</a></li>
             </ul>
@@ -22,21 +23,29 @@
             <div class="col-6 nav-bar__srh-input"><input type="text" placeholder="Rechercher..." /></div>
         </nav>
 
-        <section class="central-content">
-            <h1 class="rubrique-title">Titre rubrique</h1>
-            <form class="classement-setting">
+        <nav class="row desk-nav">
+            <div class="col-lg-2 offset-lg-2 desk-nav__logo">LOGO</div>
+            <div class="col-lg-2 offset-lg-2 desk-nav__link"><a href="#">ANIME</a></div>
+            <div class="col-lg-2 desk-nav__link"><a href="#">MANGA</a></div>
+            <div class="col-lg-4 offset-lg-2 desk-nav__srh-input"><input type="text" placeholder="Rechercher..." /></div>
+            <div class="col-lg-1 desk-nav__srh-btn">🔍</div>
+        </nav>
+
+        <section class="row central-content">
+            <h1 class="col-12 col-lg-6 offset-lg-3 rubrique-title">Titre rubrique</h1>
+            <form class="col-12 col-lg-4 offset-lg-4 classement-setting">
                 <p class="classement-setting-paragraph">Tier par: </p>
                 <div class="radio-container">
-                    <div>
+                    <div class="radio-item">
                         <input type="radio" name="classement" value="actualité" id="actualité" /><label for="actualité">Actualité</label>
                     </div>
-                    <div>
+                    <div class="radio-item">
                         <input type="radio" name="classement" value="ancienneté" id="ancienneté" /><label for="ancienneté">Ancienneté</label>
                     </div>
                 </div>
             </form>
 
-            <main class="news-section">
+            <main class="col-12 col-lg-5 offset-lg-2 news-section">
                 <article class="rubrique-main-article">
                     <div class="main-article-video">MAIN VIDEO</div>
                     <div class="main-article-text">
